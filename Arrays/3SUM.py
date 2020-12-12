@@ -14,8 +14,7 @@ Handling Duplicates in 3SUM
 Imagine we are at index i and we have invoked the 2SUM problem from index i+1 to end of the array. Now once the 2SUM terminates, we will have a list of all triplets which include nums[i]. To avoid duplicates, we must skip all nums[i] where nums[i] == nums[i-1].
             if i > 0 and nums[i] == nums[i-1]:
                 continue
-               
-Code:
+             
 class Solution:
 def threeSum (self, nums:List [int]) -> List [List[int]]:
   nums.sort()
